@@ -1,644 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Lucide Icon CDN -->
-<script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/portfolio (1).png" alt="Logo" class="logo-img" />
+          
+          <span class="logo-text">Portfolio</span>
+          <button id="menu-toggle" class="menu-toggle">☰</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-</head>
-<body>
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="assets/portfolio.png" alt="Logo" class="logo-img">
-      <span class="logo-text">Portfolio</span>
-      <button id="menu-toggle" class="menu-toggle">☰</button>
-    </div>
-   <ul class="nav-links">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#experience">Experience</a></li>
-  <li><a href="#certifications">Certifications</a></li>
-   <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+        <button id="theme-toggle">🌙</button>
+      </nav>
+    </header>
 
-    <button id="theme-toggle">🌙</button>
-  </nav>
-</header>
-
-
-  <main>
-    
+    <main>
       <!-- Hero Section Content -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-  <h1 class="hero-name" >Shree Ram Bhardwaj</h1>
-  <h2 class="hero-subtitle">
-    <span class="line"></span> Full Stack Developer
-  </h2>
-  <p class="hero-bio">
-    I am a passionate full stack developer with a strong interest in building responsive, scalable, and user-friendly web applications. Currently exploring modern technologies and developing projects to sharpen my skills and contribute to real-world solutions.
-  </p>
-  <a href="#contact" class="connect-btn">
-  <i data-lucide="send" class="connect-icon"></i>
-  Let's Connect
-</a>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-name">Shree Ram Bhardwaj</h1>
+            <h2 class="hero-subtitle">
+              <span class="line"></span> Full Stack Developer
+            </h2>
+            <p class="hero-bio">
+              I am a passionate full stack developer with a strong interest in
+              building responsive, scalable, and user-friendly web applications.
+              Currently exploring modern technologies and developing projects to
+              sharpen my skills and contribute to real-world solutions.
+            </p>
+            <a href="#contact" class="connect-btn">
+              <i data-lucide="send" class="connect-icon"></i>
+              Let's Connect
+            </a>
+          </div>
 
-</div>
+          <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Profile Picture" id="hero-img" />
+          </div>
+        </div>
+      </section>
 
-    <div class="hero-image">
-      <img src="assets/profile.jpg" alt="Profile Picture" id="hero-img" />
-    </div>
-  </div>
-</section>
+      <!-- Divider Line  -->
 
-<!-- Divider Line  -->
+      <div class="section-divider"></div>
 
-<div class="section-divider"></div>
-
-   
       <!-- About Section -->
-<section class="about-section" id="about">
-  <div class="about-header">
-    <h1>About Me</h1>
-    <h3>Who am I?</h3>
-  </div>
-
-  <div class="about-container">
-    <div class="about-left">
-      <img src="assets/profile.jpg" alt="About Me Photo">
-    </div>
-    <div class="about-right">
-      <p>
-        I'm <strong>Shree Ram Bhardwaj</strong>, a dedicated Full Stack Developer who enjoys creating elegant and functional websites and applications. I build intuitive user interfaces, strong backend services, and enjoy turning ideas into digital realities. My goal is to merge creativity with clean, efficient code to deliver great user experiences.
-      </p>
-     <!-- Download Resume Button -->
-<!-- Download Resume Button -->
-<a href="assets/resume.pdf" download class="download-btn">
-  <img src="https://img.icons8.com/ios-filled/24/download--v1.png" alt="Download Icon" />
-  Download Resume
-</a>
-
-
-    </div>
-  </div>
-</section>
-
-
-
-<div class="section-divider"></div>
-
-
-
-<!-- SKILL SECTION  -->
-
-
-<section id="skills" class="skills-section">
-  <h1 class="section-title">My Skills</h1>
-  <p class="section-subtitle">My Technical Level</p>
-
-  <div class="skills-container">
-    <!-- Web Development -->
-    <div class="skill-category">
-      <h2>Web Development</h2>
-      <div class="skills-list">
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/html5" alt="HTML5 Logo"/>
-          <div class="skill-text"><span>HTML</span><p>Advanced</p></div>
+      <section class="about-section" id="about">
+        <div class="about-header">
+          <h1>About Me</h1>
+          <h3>Who am I?</h3>
         </div>
-        <div class="skill-item">
-         <img
-  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.0/svg/logo-css3.svg"
-  alt="CSS3 Logo"
-  
-/>
 
-
-          <div class="skill-text"><span>CSS</span><p>Advanced</p></div>
+        <div class="about-container">
+          <div class="about-left">
+            <img src="assets/profile.jpg" alt="About Me Photo" />
+          </div>
+          <div class="about-right">
+            <p>
+              I'm <strong>Shree Ram Bhardwaj</strong>, a dedicated Full Stack
+              Developer who enjoys creating elegant and functional websites and
+              applications. I build intuitive user interfaces, strong backend
+              services, and enjoy turning ideas into digital realities. My goal
+              is to merge creativity with clean, efficient code to deliver great
+              user experiences.
+            </p>
+            <!-- Download Resume Button -->
+            <!-- Download Resume Button -->
+            <a href="assets/resume.pdf" download class="download-btn">
+              <img
+                src="https://img.icons8.com/ios-filled/24/download--v1.png"
+                alt="Download Icon"
+              />
+              Download Resume
+            </a>
+          </div>
         </div>
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript Logo"/>
-          <div class="skill-text"><span>JavaScript</span><p>Intermediate</p></div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- SKILL SECTION  -->
+
+      <section id="skills" class="skills-section">
+        <h1 class="section-title">My Skills</h1>
+        <p class="section-subtitle">My Technical Level</p>
+
+        <div class="skills-container">
+          <!-- Web Development -->
+          <div class="skill-category">
+            <h2>Web Development</h2>
+            <div class="skills-list">
+              <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/html5" alt="HTML5 Logo" />
+                <div class="skill-text">
+                  <span>HTML</span>
+                  <p>Advanced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.0/svg/logo-css3.svg"
+                  alt="CSS3 Logo"
+                />
+
+                <div class="skill-text">
+                  <span>CSS</span>
+                  <p>Advanced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdn.simpleicons.org/javascript"
+                  alt="JavaScript Logo"
+                />
+                <div class="skill-text">
+                  <span>JavaScript</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/react-native.png"
+                  alt="React Logo"
+                />
+                <div class="skill-text">
+                  <span>React</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/nodejs.png"
+                  alt="Node.js Logo"
+                />
+                <div class="skill-text">
+                  <span>Node.js</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdn.simpleicons.org/bootstrap"
+                  alt="Bootstrap Logo"
+                />
+                <div class="skill-text">
+                  <span>Bootstrap</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/tailwind_css.png"
+                  alt="Tailwind CSS Logo"
+                />
+                <div class="skill-text">
+                  <span>Tailwind</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                  alt="Express.js Logo"
+                />
+
+                <div class="skill-text">
+                  <span>Express.js</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Skills -->
+          <div class="skill-category">
+            <h2>Other Skills</h2>
+            <div class="skills-list">
+              <div class="skill-item">
+                <img src="https://cdn.simpleicons.org/c" alt="C Logo" />
+                <div class="skill-text">
+                  <span>C</span>
+                  <p>Advanced</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdn.simpleicons.org/cplusplus"
+                  alt="C++ Logo"
+                />
+                <div class="skill-text">
+                  <span>C++</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/python.png"
+                  alt="Python Logo"
+                />
+                <div class="skill-text">
+                  <span>Python</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdn.simpleicons.org/javascript"
+                  alt="JavaScript Logo"
+                />
+
+                <div class="skill-text">
+                  <span>JavaScript</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-algorithm-computer-programming-flaticons-lineal-color-flat-icons.png"
+                  alt="DSA Logo"
+                />
+
+                <div class="skill-text">
+                  <span>DSA</span>
+                  <p>Intermediate</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdn.simpleicons.org/mongodb"
+                  alt="MongoDB Logo"
+                />
+                <div class="skill-text">
+                  <span>MongoDB</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/java-coffee-cup-logo.png"
+                  alt="Java Logo"
+                />
+                <div class="skill-text">
+                  <span>Java</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://img.icons8.com/color/48/mysql-logo.png"
+                  alt="SQL Logo"
+                />
+                <div class="skill-text">
+                  <span>SQL</span>
+                  <p>Basic</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/react-native.png" alt="React Logo"/>
-          <div class="skill-text"><span>React</span><p>Basic</p></div>
+      </section>
+
+      <!-- other technologies section  -->
+      <section class="other-tech-section">
+        <h2 class="section-title">Other Technologies</h2>
+
+        <div class="tech-logos-container">
+          <!-- Top scrolling logos (left direction) -->
+          <div class="logo-row scroll-left">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+              alt="GitLab"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+              alt="Excel"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/888/888879.png"
+              alt="CAD"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+              alt="CSS3"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
+              alt="Markdown"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+              alt="NPM"
+            />
+          </div>
+
+          <!-- Middle tech names scrolling slowly -->
+          <div class="tech-names-row">
+            <p>
+              HTML &nbsp; • &nbsp; CSS &nbsp; • &nbsp; Git &nbsp; • &nbsp;
+              GitHub &nbsp; • &nbsp; React &nbsp; • &nbsp; Word &nbsp; • &nbsp;
+              PowerPoint &nbsp; • &nbsp; Node.js &nbsp; • &nbsp; MongoDB &nbsp;
+              • &nbsp; Excel
+            </p>
+          </div>
+
+          <!-- Bottom scrolling logos (right direction) -->
+          <div class="logo-row scroll-right">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732221.png"
+              alt="Word"
+            />
+
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
+              alt="Database"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+              alt="Linux"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+              alt="Docker"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+              alt="Trello"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
+              alt="Slack"
+            />
+          </div>
         </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/nodejs.png" alt="Node.js Logo"/>
-          <div class="skill-text"><span>Node.js</span><p>Intermediate</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/bootstrap" alt="Bootstrap Logo"/>
-          <div class="skill-text"><span>Bootstrap</span><p>Intermediate</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS Logo"/>
-          <div class="skill-text"><span>Tailwind</span><p>Basic</p></div>
-        </div>
-        <div class="skill-item">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js Logo"/>
+      </section>
 
+      <div class="section-divider"></div>
 
+      <!-- EXPERIENCE SECTION  -->
+      <div class="experience-section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My Professional Journey</p>
 
-          <div class="skill-text"><span>Express.js</span><p>Basic</p></div>
-        </div>
-      </div>
-    </div>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <h3 class="job-title">Front-End Intern</h3>
+              <h4 class="company-name">SystArc Technologies</h4>
+              <p>
+                Worked on responsive UI components, designed web pages with
+                HTML, CSS & JS. Collaborated with UI/UX designers.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="timeline-date-badge">May 2024 – Jun 2024</div>
+          </div>
 
-    <!-- Other Skills -->
-    <div class="skill-category">
-      <h2>Other Skills</h2>
-      <div class="skills-list">
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/c" alt="C Logo"/>
-          <div class="skill-text"><span>C</span><p>Advanced</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/cplusplus" alt="C++ Logo"/>
-          <div class="skill-text"><span>C++</span><p>Intermediate</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/python.png" alt="Python Logo"/>
-          <div class="skill-text"><span>Python</span><p>Basic</p></div>
-        </div>
-        <div class="skill-item">
-         <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript Logo"/>
+          <div class="timeline-item right">
+            <div class="timeline-card">
+              <h3 class="job-title">Java Development Intern</h3>
+              <h4 class="company-name">Moonstack Pvt. Ltd.</h4>
+              <p>
+                Built REST APIs, handled backend operations, and worked on
+                Spring Boot microservices architecture.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+              </div>
+            </div>
+            <div class="timeline-date-badge">Jul 2024 – Aug 2024</div>
+          </div>
 
-          <div class="skill-text"><span>JavaScript</span><p>Intermediate</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-algorithm-computer-programming-flaticons-lineal-color-flat-icons.png" alt="DSA Logo"/>
-
-          <div class="skill-text"><span>DSA</span><p>Intermediate</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB Logo"/>
-          <div class="skill-text"><span>MongoDB</span><p>Basic</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java Logo"/>
-          <div class="skill-text"><span>Java</span><p>Basic</p></div>
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="SQL Logo"/>
-          <div class="skill-text"><span>SQL</span><p>Basic</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- other technologies section  -->
-<section class="other-tech-section">
-  <h2 class="section-title">Other Technologies</h2>
-
-  <div class="tech-logos-container">
-    <!-- Top scrolling logos (left direction) -->
-    <div class="logo-row scroll-left">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" />
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Excel" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="CAD" />
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="CSS3" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="Markdown" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM" />
-    </div>
-
-    <!-- Middle tech names scrolling slowly -->
-    <div class="tech-names-row">
-      <p>HTML &nbsp; • &nbsp; CSS &nbsp; • &nbsp; Git &nbsp; • &nbsp; GitHub &nbsp; • &nbsp; React &nbsp; • &nbsp; Word &nbsp; • &nbsp; PowerPoint &nbsp; • &nbsp; Node.js &nbsp; • &nbsp; MongoDB &nbsp; • &nbsp; Excel</p>
-    </div>
-
-    <!-- Bottom scrolling logos (right direction) -->
-    <div class="logo-row scroll-right">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Word" />
-
-      <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Database" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" />
-    </div>
-  </div>
-</section>
-
-
-<div class="section-divider"></div>
-
- <!-- EXPERIENCE SECTION  -->
- <div class="experience-section" id="experience">
-  <h2 class="section-title">Experience</h2>
-  <p class="section-subtitle">My Professional Journey</p>
-
-  <div class="timeline">
-
-    <div class="timeline-item left">
-      <div class="timeline-card">
-        <h3 class="job-title">Front-End Intern</h3>
-        <h4 class="company-name">SystArc Technologies</h4>
-        <p>Worked on responsive UI components, designed web pages with HTML, CSS & JS. Collaborated with UI/UX designers.</p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-      </div>
-      <div class="timeline-date-badge">May 2024 – Jun 2024</div>
-    </div>
-
-    <div class="timeline-item right">
-      <div class="timeline-card">
-        <h3 class="job-title">Java Development Intern</h3>
-        <h4 class="company-name">Moonstack Pvt. Ltd.</h4>
-        <p>Built REST APIs, handled backend operations, and worked on Spring Boot microservices architecture.</p>
-        <div class="tags">
-          <span>Java</span><span>Spring Boot</span><span>MySQL</span>
-        </div>
-      </div>
-      <div class="timeline-date-badge">Jul 2024 – Aug 2024</div>
-    </div>
-
-    <div class="timeline-item left">
-      <div class="timeline-card">
-        <h3 class="job-title">Full Stack Intern</h3>
-        <h4 class="company-name">Integrated Byte</h4>
-        <p>Handled both frontend and backend using MERN stack. Developed end-to-end features independently.</p>
-        <div class="tags">
-          <span>React</span><span>Node.js</span><span>MongoDB</span>
-        </div>
-      </div>
-      <div class="timeline-date-badge">Sep 2024 – Dec 2024</div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section-divider"></div>
-
-
- <!-- ---------- -->
-
- <!-- ===================== CERTIFICATIONS SECTION ==================  -->
-<!-- ======== Certifications Section Start ======== -->
-<section id="certifications" class="cert-section">
-  <h2 class="section-title">Certifications</h2>
-  <p class="section-subtitle">My Learning Journey</p>
-
-  <div class="cert-grid">
-    <!-- Card 1 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Cloud Computing</h3>
-        <p class="issuer">NPTEL</p>
-        <p>This course covers the fundamentals of cloud computing, including cloud platforms, services, security, and applications.</p>
-        <p class="issue-date">Issued: Jan–Apr 2025</p>
-        <button class="cert-btn" data-cert="certificates/cloud-computing.pdf">View Certificate</button>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Fundamentals of Object Oriented Programming</h3>
-        <p class="issuer">NPTEL</p>
-        <p>This course covers OOP concepts like classes, inheritance, polymorphism, encapsulation, etc.</p>
-        <p class="issue-date">Issued: Jan–Apr 2025</p>
-        <button class="cert-btn" data-cert="certificates/oops.pdf">View Certificate</button>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Database Management Systems</h3>
-        <p class="issuer">Coursera</p>
-        <p>Introduces relational databases, normalization, SQL queries, indexing and transactions.</p>
-        <p class="issue-date">Issued: July 2024</p>
-        <button class="cert-btn" data-cert="certificates/dbms.pdf">View Certificate</button>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Web Development Bootcamp</h3>
-        <p class="issuer">Udemy</p>
-        <p>Comprehensive course covering HTML, CSS, JS, and backend technologies like Node.js and MongoDB.</p>
-        <p class="issue-date">Issued: Dec 2024</p>
-        <button class="cert-btn" data-cert="certificates/web-dev.pdf">View Certificate</button>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Python for Everybody</h3>
-        <p class="issuer">Coursera</p>
-        <p>A foundational Python course covering basic syntax, data structures, and file handling.</p>
-        <p class="issue-date">Issued: Feb 2025</p>
-        <button class="cert-btn" data-cert="certificates/python.pdf">View Certificate</button>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="cert-card">
-      <div class="cert-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Certificate" />
-      </div>
-      <div class="cert-content">
-        <h3>Git & GitHub Mastery</h3>
-        <p class="issuer">freeCodeCamp</p>
-        <p>Teaches version control fundamentals, branching, merging, and remote collaboration on GitHub.</p>
-        <p class="issue-date">Issued: Mar 2025</p>
-        <button class="cert-btn" data-cert="certificates/git.pdf">View Certificate</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Certificate Modal -->
-<div id="cert-modal" class="cert-modal">
-  <span class="cert-close">&times;</span>
-  <div class="cert-modal-content">
-    <iframe id="cert-frame" src="" frameborder="0"></iframe>
-  </div>
-</div>
-
-<!-- ======== Certifications Section End ======== -->
-
-<div class="section-divider"></div> 
-
-    <!-- ===================================================================  -->
-    <!-- ================== PROJECT SECTION ======================== -->
-    
-   <section id="projects" class="project-section">
-  <h2 class="section-title">Projects</h2>
-  <p class="section-subtitle">Explore Some of My Best Creations</p>
-
-  <div class="project-grid">
-    <!-- Project Card 1 -->
-    <div class="project-card">
-      <div class="project-img">
-        <img src="project_images/spotify.jpg" alt="Project 1" />
-      </div>
-      <div class="project-content">
-        <h3>Spotify Clone</h3>
-        <p class="tech-stack">HTML • CSS  </p>
-        <p class="description">🎵 Spotify Clone
-A responsive music streaming web app that mimics core Spotify features, including music playback, playlists, artist profiles, and user-friendly navigation. </p>
-        <div class="tags">
-          <span>Frontend </span><span>Music </span><span>Web D</span>
-        </div>
-        <div class="button-row">
-         <a href="https://spotify-clone-ashen-tau.vercel.app/" target="_blank"> <button class="visit-btn">Visit Demo</button></a>
-          <div class="btn-divider"></div>
-          <div class="icon-buttons">
-            <a href="https://github.com/ramk0101/spotify-clone" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
-
-            <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
-             <a href="#" onclick="navigator.share({ title: 'Spotify Clone', url: 'https://spotify-clone-ashen-tau.vercel.app/' }); return false;">
-  <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" />
-</a>
-
+          <div class="timeline-item left">
+            <div class="timeline-card">
+              <h3 class="job-title">Full Stack Intern</h3>
+              <h4 class="company-name">Integrated Byte</h4>
+              <p>
+                Handled both frontend and backend using MERN stack. Developed
+                end-to-end features independently.
+              </p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+            </div>
+            <div class="timeline-date-badge">Sep 2024 – Dec 2024</div>
           </div>
         </div>
       </div>
-    </div>
-              <!-- ================= 2 ========================  -->
-    <!-- Project Card 2 -->
-    <div class="project-card">
-      <div class="project-img">
-        <img src="project_images/simon says.jpg" alt="Project 2" />
-      </div>
-      <div class="project-content">
-        <h3>Simon Says Game</h3>
-        <p class="tech-stack">HTML • CSS • JAVASCRIPT</p>
-        <p class="description">🎮 Test your memory with this fun & colorful Simon Says game! Repeat the light & sound patterns to climb the levels. Can you keep up? 💡🧠🔥</p>
-        <div class="tags">
-          <span>gaming</span><span>education</span><span>interactive</span>
-        </div>
-        <div class="button-row">
-          <a href="https://ramk0101.github.io/simon-says/" target="_blank"><button class="visit-btn">Visit Demo</button></a>
-          <div class="btn-divider"></div>
-          <div class="icon-buttons">
-            <a href="https://github.com/ramk0101/simon-says" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
-            <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
-             <a href="#" onclick="navigator.share({ title: 'Simon says', url: 'https://ramk0101.github.io/simon-says/' }); return false;">
-         <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" />
-             </a>
+
+      <div class="section-divider"></div>
+
+      <!-- ---------- -->
+
+      <!-- ===================== CERTIFICATIONS SECTION ==================  -->
+      <!-- ======== Certifications Section Start ======== -->
+      <section id="certifications" class="cert-section">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">My Learning Journey</p>
+
+        <div class="cert-grid">
+          <!-- Card 1 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Cloud Computing</h3>
+              <p class="issuer">NPTEL</p>
+              <p>
+                This course covers the fundamentals of cloud computing,
+                including cloud platforms, services, security, and applications.
+              </p>
+              <p class="issue-date">Issued: Jan–Apr 2025</p>
+              <button
+                class="cert-btn"
+                data-cert="certificates/cloud-computing.pdf"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Fundamentals of Object Oriented Programming</h3>
+              <p class="issuer">NPTEL</p>
+              <p>
+                This course covers OOP concepts like classes, inheritance,
+                polymorphism, encapsulation, etc.
+              </p>
+              <p class="issue-date">Issued: Jan–Apr 2025</p>
+              <button class="cert-btn" data-cert="certificates/oops.pdf">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Database Management Systems</h3>
+              <p class="issuer">Coursera</p>
+              <p>
+                Introduces relational databases, normalization, SQL queries,
+                indexing and transactions.
+              </p>
+              <p class="issue-date">Issued: July 2024</p>
+              <button class="cert-btn" data-cert="certificates/dbms.pdf">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Web Development Bootcamp</h3>
+              <p class="issuer">Udemy</p>
+              <p>
+                Comprehensive course covering HTML, CSS, JS, and backend
+                technologies like Node.js and MongoDB.
+              </p>
+              <p class="issue-date">Issued: Dec 2024</p>
+              <button class="cert-btn" data-cert="certificates/web-dev.pdf">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Python for Everybody</h3>
+              <p class="issuer">Coursera</p>
+              <p>
+                A foundational Python course covering basic syntax, data
+                structures, and file handling.
+              </p>
+              <p class="issue-date">Issued: Feb 2025</p>
+              <button class="cert-btn" data-cert="certificates/python.pdf">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                alt="Certificate"
+              />
+            </div>
+            <div class="cert-content">
+              <h3>Git & GitHub Mastery</h3>
+              <p class="issuer">freeCodeCamp</p>
+              <p>
+                Teaches version control fundamentals, branching, merging, and
+                remote collaboration on GitHub.
+              </p>
+              <p class="issue-date">Issued: Mar 2025</p>
+              <button class="cert-btn" data-cert="certificates/git.pdf">
+                View Certificate
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-                   <!-- ====================== 3 ============================  -->
-    <!-- Project Card 3 -->
-    <div class="project-card">
-      <div class="project-img">
-        <img src="project_images/todo.jpg" alt="Project 3" />
-      </div>
-      <div class="project-content">
-        <h3>To Do List</h3>
-        <p class="tech-stack">HTML • CSS • JAVASCRIPT </p>
-        <p class="description">📝 Stay organized with this sleek To-Do List app! Add, check off, and manage your daily tasks with ease. ✅💼🧘‍♂️</p>
-        <div class="tags">
-          <span>To-Do App</span><span>Task Manager</span><span>Responsive Design</span>
-        </div>
-        <div class="button-row">
-          <a href="https://todolist-red-psi.vercel.app/" target="_blank"><button class="visit-btn">Visit Demo</button></a>
-          <div class="btn-divider"></div>
-          <div class="icon-buttons">
-            <a href="https://github.com/ramk0101/To-do-list" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
+      </section>
 
-            <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
-              <a href="#" onclick="navigator.share({ title: 'To Do List', url: 'https://todolist-red-psi.vercel.app/' }); return false;">
-         <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" />
-             </a>
+      <!-- Certificate Modal -->
+      <div id="cert-modal" class="cert-modal">
+        <span class="cert-close">&times;</span>
+        <div class="cert-modal-content">
+          <iframe id="cert-frame" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+      <!-- ======== Certifications Section End ======== -->
+
+      <div class="section-divider"></div>
+
+      <!-- ===================================================================  -->
+      <!-- ================== PROJECT SECTION ======================== -->
+
+      <section id="projects" class="project-section">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Explore Some of My Best Creations</p>
+
+        <div class="project-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/spotify.jpg" alt="Project 1" />
+            </div>
+            <div class="project-content">
+              <h3>Spotify Clone</h3>
+              <p class="tech-stack">HTML • CSS</p>
+              <p class="description">
+                🎵 Spotify Clone A responsive music streaming web app that
+                mimics core Spotify features, including music playback,
+                playlists, artist profiles, and user-friendly navigation.
+              </p>
+              <div class="tags">
+                <span>Frontend </span><span>Music </span><span>Web D</span>
+              </div>
+              <div class="button-row">
+                <a
+                  href="https://spotify-clone-ashen-tau.vercel.app/"
+                  target="_blank"
+                >
+                  <button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a
+                    href="https://github.com/ramk0101/spotify-clone"
+                    target="_blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+
+                  <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'Spotify Clone', url: 'https://spotify-clone-ashen-tau.vercel.app/' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ================= 2 ========================  -->
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/simon says.jpg" alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3>Simon Says Game</h3>
+              <p class="tech-stack">HTML • CSS • JAVASCRIPT</p>
+              <p class="description">
+                🎮 Test your memory with this fun & colorful Simon Says game!
+                Repeat the light & sound patterns to climb the levels. Can you
+                keep up? 💡🧠🔥
+              </p>
+              <div class="tags">
+                <span>gaming</span><span>education</span
+                ><span>interactive</span>
+              </div>
+              <div class="button-row">
+                <a href="https://ramk0101.github.io/simon-says/" target="_blank"
+                  ><button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a
+                    href="https://github.com/ramk0101/simon-says"
+                    target="blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+                  <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'Simon says', url: 'https://ramk0101.github.io/simon-says/' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ====================== 3 ============================  -->
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/todo.jpg" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3>To Do List</h3>
+              <p class="tech-stack">HTML • CSS • JAVASCRIPT</p>
+              <p class="description">
+                📝 Stay organized with this sleek To-Do List app! Add, check
+                off, and manage your daily tasks with ease. ✅💼🧘‍♂️
+              </p>
+              <div class="tags">
+                <span>To-Do App</span><span>Task Manager</span
+                ><span>Responsive Design</span>
+              </div>
+              <div class="button-row">
+                <a href="https://todolist-red-psi.vercel.app/" target="_blank"
+                  ><button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a
+                    href="https://github.com/ramk0101/To-do-list"
+                    target="_blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+
+                  <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'To Do List', url: 'https://todolist-red-psi.vercel.app/' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4-->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/pixvault.jpg" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3>PIXVAULT</h3>
+              <p class="tech-stack">HTML • CSS • JAVASCRIPT</p>
+              <p class="description">
+                🔍 Dive into an endless vault of high-quality images curated
+                from across the internet. 🌐✨
+              </p>
+              <div class="tags">
+                <span>PhotoGallery</span><span>APIIntegration</span
+                ><span>ResponsiveDesign</span>
+              </div>
+              <div class="button-row">
+                <a href="https://ramk0101.github.io/pixvault/" target="_blank"
+                  ><button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a href="https://github.com/ramk0101/pixvault" target="_blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+
+                  <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'pixvault', url: 'https://ramk0101.github.io/pixvault/' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/portfolio.png" alt="Project 5" />
+            </div>
+            <div class="project-content">
+              <h3>Portfolio</h3>
+              <p class="tech-stack">HTML • CSS • JavaScript</p>
+              <p class="description">
+                💼 A modern, responsive portfolio built with pure HTML, CSS, and
+                JavaScript to showcase projects and skills in a clean design.
+              </p>
+              <div class="tags">
+                <span>html</span><span>css</span><span>javascript</span>
+              </div>
+              <div class="button-row">
+                <a href="https://portfolio-u4hz.onrender.com" target="_blank"
+                  ><button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a
+                    href="https://github.com/ramk0101/portfolio"
+                    target="_blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'Portfolio', url: 'https://portfolio-u4hz.onrender.com' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 6 -->
+            <div class="project-card">
+            <div class="project-img">
+              <img src="project_images/wanderlust.png" alt="Project 6" />
+            </div>
+            <div class="project-content">
+              <h3>Wanderlust</h3>
+              <p class="tech-stack">HTML • CSS • JavaScript • Node.js • Express.js • MongoDB • Bootstrap •</p>
+              <p class="description">
+               🌍 A full-stack travel booking platform with dynamic listings, user authentication, and a seamless experience for exploring destinations.
+              </p>
+              <div class="tags">
+              <span>Full-Stack</span><span>Travel</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+              </div>
+              <div class="button-row">
+                <a href="https://wanderlust-rtce.onrender.com/listings" target="_blank"
+                  ><button class="visit-btn">Visit Demo</button></a
+                >
+                <div class="btn-divider"></div>
+                <div class="icon-buttons">
+                  <a
+                    href="https://github.com/ramk0101/Wanderlust/tree/master"
+                    target="_blank"
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="GitHub"
+                  /></a>
+                  <a
+                    href="#"
+                    onclick="navigator.share({ title: 'Wanderlust', url: 'https://wanderlust-rtce.onrender.com/listings' }); return false;"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/929/929610.png"
+                      alt="Share"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- ==================== PROJECT SECTION ENDS HEERE ==================== ===  -->
+
+      <!-- ========================= CONTACT SECTION=======================  -->
+
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Get in Touch</p>
+
+        <div class="contact-row">
+          <!-- WhatsApp Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+              />
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+91 8092181680</p>
+            <a
+              class="reach-btn"
+              href="https://wa.me/918092181680"
+              target="_blank"
+              >Reach Out &rarr;</a
+            >
+          </div>
+
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+                alt="Email"
+              />
+            </div>
+            <h3>Email</h3>
+            <p>shreeramk0101@gmail.com</p>
+            <a class="reach-btn" href="mailto:shreeramk0101.com"
+              >Reach Out &rarr;</a
+            >
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+                alt="LinkedIn"
+              />
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Shree Ram Kumar</p>
+            <a
+              class="reach-btn"
+              href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+              target="_blank"
+              >Reach Out &rarr;</a
+            >
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                alt="GitHub"
+              />
+            </div>
+            <h3>GitHub</h3>
+            <p>@shree ram kumar</p>
+            <a
+              class="reach-btn"
+              href="https://github.com/dashboard"
+              target="_blank"
+              >Reach Out &rarr;</a
+            >
           </div>
         </div>
-      </div>
-    </div>
- 
-    <!-- Project Card 4-->
-    <div class="project-card">
-      <div class="project-img">
-        <img src="project_images/pixvault.jpg" alt="Project 3" />
-      </div>
-      <div class="project-content">
-        <h3>PIXVAULT</h3>
-        <p class="tech-stack">HTML • CSS • JAVASCRIPT </p>
-        <p class="description">🔍 Dive into an endless vault of high-quality images curated from across the internet.  🌐✨</p>
-        <div class="tags">
-          <span>PhotoGallery</span><span>APIIntegration</span><span>ResponsiveDesign</span>
-        </div>
-        <div class="button-row">
-          <a href="https://ramk0101.github.io/pixvault/" target="_blank"><button class="visit-btn">Visit Demo</button></a>
-          <div class="btn-divider"></div>
-          <div class="icon-buttons">
-            <a href="https://github.com/ramk0101/pixvault" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
 
-            <!-- <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" /></a> -->
-             <a href="#" onclick="navigator.share({ title: 'pixvault', url: 'https://ramk0101.github.io/pixvault/' }); return false;">
-         <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" />
-             </a>
+        <div class="contact-row">
+          <!-- Location Card with Map -->
+          <div class="contact-card map-card">
+            <h3>My Location</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.6208942982316!2d75.8410622!3d26.7693505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc9109f16b5a9%3A0x6074235c26e05748!2sYagyavalkya%20Institute%20of%20Technology!5e1!3m2!1sen!2sin!4v1752034537746!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Review Form Card -->
+
+          <div class="contact-card form-card">
+            <h3>Write a Review</h3>
+            <form action="https://formspree.io/f/xovwobza" method="post">
+              <input type="text" placeholder="Your Name" name="name" />
+              <input
+                type="email"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
+              <textarea
+                placeholder="Your Message..."
+                rows="4"
+                name="mesage"
+              ></textarea>
+              <button type="submit" class="reach-btn">Send &rarr;</button>
+            </form>
           </div>
         </div>
-      </div>
-    </div>
- 
-    <!-- Project Card 3 -->
-    <div class="project-card">
-      <div class="project-img">
-        <img src="project_images/portfolio.png" alt="Project 3" />
-      </div>
-      <div class="project-content">
-        <h3>Portfolio</h3>
-        <p class="tech-stack">HTML • CSS • JavaScript </p>
-        <p class="description">💼 A modern, responsive portfolio built with pure HTML, CSS, and JavaScript to showcase projects and skills in a clean design.</p>
-        <div class="tags">
-          <span>html</span><span>css</span><span>javascript</span>
-        </div>
-        <div class="button-row">
-           <a href="https://portfolio-u4hz.onrender.com" target="_blank"><button class="visit-btn">Visit Demo</button></a>
-          <div class="btn-divider"></div>
-          <div class="icon-buttons">
-            <a href="https://github.com/ramk0101/portfolio" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
-            <a href="#" onclick="navigator.share({ title: 'Portfolio', url: 'https://portfolio-u4hz.onrender.com' }); return false;">
-         <img src="https://cdn-icons-png.flaticon.com/512/929/929610.png" alt="Share" />
-             </a>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
 
-  </div>
-</section>
+      <!-- ======================================CONTACT SECTION ENDS HERE =================================  -->
+    </main>
 
-<div class="section-divider"></div> 
+    <footer class="site-footer">
+      <p>© 2025 shree Ram Bhrardwaj ❤️. All rights reserved.</p>
+    </footer>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-<!-- ==================== PROJECT SECTION ENDS HEERE ==================== ===  -->
-    
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
 
-<!-- ========================= CONTACT SECTION=======================  -->
+    <script>
+      lucide.createIcons();
+    </script>
 
-<section class="contact-section" id="contact">
-  <h2 class="section-title">Contact Me</h2>
-  <p class="section-subtitle">Get in Touch</p>
-
-  <div class="contact-row">
-    <!-- WhatsApp Card -->
-    <div class="contact-card">
-      <div class="contact-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-      </div>
-      <h3>WhatsApp</h3>
-      <p>+91 8092181680</p>
-      <a class="reach-btn" href="https://wa.me/918092181680" target="_blank">Reach Out &rarr;</a>
-    </div>
-
-    <!-- Email Card -->
-    <div class="contact-card">
-      <div class="contact-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
-      </div>
-      <h3>Email</h3>
-      <p>shreeramk0101@gmail.com</p>
-      <a class="reach-btn" href="mailto:shreeramk0101.com">Reach Out &rarr;</a>
-    </div>
-
-    <!-- LinkedIn Card -->
-    <div class="contact-card">
-      <div class="contact-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn" />
-      </div>
-      <h3>LinkedIn</h3>
-      <p>Shree Ram Kumar</p>
-      <a class="reach-btn" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">Reach Out &rarr;</a>
-    </div>
-
-    <!-- GitHub Card -->
-    <div class="contact-card">
-      <div class="contact-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-      </div>
-      <h3>GitHub</h3>
-      <p>@shree ram kumar</p>
-      <a class="reach-btn" href="https://github.com/dashboard" target="_blank">Reach Out &rarr;</a>
-    </div>
-  </div>
-
-  <div class="contact-row">
-    <!-- Location Card with Map -->
-    <div class="contact-card map-card">
-      <h3>My Location</h3>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.6208942982316!2d75.8410622!3d26.7693505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc9109f16b5a9%3A0x6074235c26e05748!2sYagyavalkya%20Institute%20of%20Technology!5e1!3m2!1sen!2sin!4v1752034537746!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <!-- Review Form Card -->
-
-    <div class="contact-card form-card">
-      <h3>Write a Review</h3>
-      <form  action="https://formspree.io/f/xovwobza" method="post">
-        <input type="text" placeholder="Your Name" name="name">
-        <input type="email" placeholder="Your Email" name="email" required>
-        <textarea placeholder="Your Message..." rows="4" name="mesage" ></textarea>
-        <button type="submit" class="reach-btn">Send &rarr;</button>
-      </form>
-    </div>
-
-
-  </div>
-</section>
-
-
-<!-- ======================================CONTACT SECTION ENDS HERE =================================  -->
-
-
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 shree Ram Bhrardwaj ❤️. All rights reserved.</p>
-  </footer>
-  <script>
-  const toggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
-
-<script>
-  lucide.createIcons();
-</script>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
